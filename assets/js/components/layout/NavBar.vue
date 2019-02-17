@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="../">
-          Logo
+          <img src="../../../img/logo.png" />
         </a>
         <span :class="{'is-active': openMenu}" @click="openMenu = !openMenu" class="navbar-burger burger" data-target="navbarMenu">
           <span></span>

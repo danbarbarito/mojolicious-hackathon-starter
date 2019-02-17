@@ -13,7 +13,17 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const config = {
   mode: isDev ? 'development' : 'production',
   module: {
-    rules: []
+    rules: [{
+      test: /\.(png|svg|jpg|gif)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            publicPath: 'asset'
+          }
+        }
+      ]
+    }]
   },
   optimization: {
     minimizer: []
