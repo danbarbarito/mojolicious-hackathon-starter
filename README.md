@@ -36,3 +36,10 @@ To use MHS:
 - Clone the repository and navigate to the project folder
 - Run `cpanm --installdeps .`
 - Run `mojo webpack script/mojolicious_hackathon_starter` to run in development mode, or `mojo webpack -m production -l https://*:443 -l http://[::]:3000 script/mojolicious_hackathon_starter` to run in production mode
+
+
+## Screenshots
+
+![home page](https://raw.githubusercontent.com/danielbarbarito/mojolicious-hackathon-starter/master/screenshots/homepage.png)
+![login page](https://raw.githubusercontent.com/danielbarbarito/mojolicious-hackathon-starter/master/screenshots/login.png)
+![sign up page](https://raw.githubusercontent.com/danielbarbarito/mojolicious-hackathon-starter/master/screenshots/signup.png)
