@@ -19,7 +19,7 @@ const config = {
         {
           loader: 'file-loader',
           options: {
-            publicPath: 'asset'
+            publicPath: '/asset'
           }
         }
       ]
