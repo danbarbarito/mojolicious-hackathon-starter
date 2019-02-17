@@ -17,7 +17,7 @@ Vue.component('my-app', App);
 
 
 const defaultState = {
-  navbarOpen: false
+
 };
 
 axios.get('/global-vars').then((resp) => {
