@@ -9,13 +9,13 @@ This is the "Mojolicious Hackathon Starter" project. The goal of this project is
 
 ## Tech Used
 
-Mojolicious (Server)
-Vue.js (Javascript Framework)
-PostgreSQL (Database)
-Webpack (Asset Bundler)
-Bulma (CSS Framework)
-Sass (CSS Preprocessor)
-Buefy (Vue wrapper around Bulma)
+- Mojolicious (Server)
+- Vue.js (Javascript Framework)
+- PostgreSQL (Database)
+- Webpack (Asset Bundler)
+- Bulma (CSS Framework)
+- Sass (CSS Preprocessor)
+- Buefy (Vue wrapper around Bulma)
 
 
 ## What is provided?
