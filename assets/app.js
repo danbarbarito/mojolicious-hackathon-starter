@@ -20,8 +20,11 @@ const defaultState = {
   navbarOpen: false
 };
 
-new Vue({
-  el: '#vue_app',
-
-  data: defaultState
+axios.get('/global-vars').then((resp) => {
+  window.global_vars = resp.data;
+  new Vue({
+    el: '#vue_app',
+  
+    data: defaultState
+  });  
 });

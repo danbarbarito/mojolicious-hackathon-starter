@@ -12,7 +12,7 @@
 
 <body>
   <div v-cloak id="vue_app">
-    <nav-bar :user="<%= $self->session('current-user') || 'null' %>"></nav-bar>
+    <nav-bar></nav-bar>
 
     % if ($self->flash('error') || $self->stash('error')) {
       <b-notification type="is-danger is-marginless">

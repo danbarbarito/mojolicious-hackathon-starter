@@ -42,12 +42,10 @@
   export default {
     data() {
       return {
+        user: window.global_vars['current-user'],
         openMenu: false,
         activeRoute: window.location.pathname
       }
-    },
-    props: {
-      user: Object
     }
   }
 </script>

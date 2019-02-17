@@ -33,6 +33,7 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#welcome');
+  $r->get('/global-vars')->to('example#global_vars');
 
   $r->get('/login')->to('auth#login');
   $r->post('/login')->to('auth#login');

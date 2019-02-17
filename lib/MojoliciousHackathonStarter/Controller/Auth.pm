@@ -1,8 +1,6 @@
 package MojoliciousHackathonStarter::Controller::Auth;
 use Mojo::Base 'Mojolicious::Controller';
 
-use Mojo::JSON qw(decode_json encode_json);
-
 use Crypt::PBKDF2;
 
 use Data::Dumper;
@@ -42,7 +40,7 @@ sub login {
 
     # Render confirmation
     my $existing_user_email = $existing_user->[0]->{email};
-    $self->session({'current-user' => encode_json($existing_user->[0])});
+    $self->session({'current-user' => $existing_user->[0]});
     $self->flash( { success => "Successfully signed in as $existing_user_email!" } );
     return $self->redirect_to('/');
 }
@@ -93,7 +91,7 @@ sub signup {
         ( { id => $new_id } ) )->hashes;
 
     # Render confirmation
-    $self->session({'current-user' => encode_json($new_user->[0])});
+    $self->session({'current-user' => $new_user->[0]});
     $self->flash( { success => "Your account ($new_id) has been created!" } );
     return $self->redirect_to('/');
 }
