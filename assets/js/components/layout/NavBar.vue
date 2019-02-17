@@ -15,8 +15,8 @@
         <div class="navbar-end">
 
           <a class="navbar-item" href='/'>Home</a>
-          <a v-if="!user" :class="{'is-active': activeRoute == '/login'}" class="navbar-item" href='/'>Login</a>
-          <a v-if="!user" :class="{'is-active': activeRoute == '/signup'}" class="navbar-item" href='/'>Sign Up</a>
+          <a v-if="!user" :class="{'is-active': activeRoute == '/login'}" class="navbar-item" href='/login'>Login</a>
+          <a v-if="!user" :class="{'is-active': activeRoute == '/signup'}" class="navbar-item" href='/signup'>Sign Up</a>
           <div style="align-items: center" v-if="user" class="navbar-item has-dropdown">
            <b-dropdown>
               <a slot="trigger" class="navbar-link" href="#">Profile</a>
