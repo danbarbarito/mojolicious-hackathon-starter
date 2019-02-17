@@ -16,6 +16,8 @@ sub startup {
   # Configure the application
   $self->secrets($config->{secrets});
 
+  # Add images to static path
+  push @{$self->static->paths}, $self->home->child('assets', 'img')->to_string;
 
   # DB Helpers
   $self->helper(pg => sub { state $pg = Mojo::Pg->new(shift->config('pg')) });

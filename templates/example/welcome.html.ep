@@ -9,6 +9,8 @@
       </h1>
       <h2 class="subtitle">
         <%= $msg %>
+        <br/>
+        %= image "mojo.png", width => 90
       </h2>
     </div>
   </div>
