@@ -1,0 +1,46 @@
+% layout 'default';
+% title 'Mojolicious Hackathon Starter - Login';
+
+<section class="hero is-warning is-bold is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <h3 class="title">Sign Up</h3>
+        <p class="subtitle">Please create an account.</p>
+        <div class="box">
+          %= form_for signup => (method => 'POST') => begin
+          <div class="field">
+            <div class="control">
+              %= email_field 'email', class => "input is-large", placeholder => "Your Email*"
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              %= password_field 'password', class => "input is-large", placeholder => "Your Password*"
+              <p class="help">Must be more than 7 characters</p>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              %= password_field 'password_confirm', class => "input is-large", placeholder => "Your Password (Again)*"
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <button class="button is-block is-info is-large is-fullwidth">Create Account</button>
+          <p class="help">Fields with * are required</p>
+          % end
+        </div>
+        <p>
+          <a href="/login">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

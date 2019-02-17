@@ -1,0 +1,4 @@
+{
+  secrets => ['3e4a51f8a7e6f93553a9e46ede547fe456552c1e'],
+  pg => "postgresql://postgres@127.0.0.1:5432/postgres"
+}
