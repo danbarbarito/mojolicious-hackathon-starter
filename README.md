@@ -35,6 +35,7 @@ To use MHS:
 - Install Perl5, and CPANM
 - Clone the repository and navigate to the project folder
 - Run `cpanm --installdeps .`
+- Copy `mojolicious_hackathon_starter.conf.example` to `mojolicious_hackathon_starter.conf` and modify the file as needed
 - Run `mojo webpack script/mojolicious_hackathon_starter` to run in development mode, or `mojo webpack -m production -l https://*:443 -l http://[::]:3000 script/mojolicious_hackathon_starter` to run in production mode
 
 
