@@ -14,7 +14,7 @@
       <div :class="{'is-active': openMenu}" id="navbarMenu" class="navbar-menu ">
         <div class="navbar-end">
 
-          <a class="navbar-item" href='/'>Home</a>
+          <a :class="{'is-active': activeRoute == '/'}" class="navbar-item" href='/'>Home</a>
           <a v-if="!user" :class="{'is-active': activeRoute == '/login'}" class="navbar-item" href='/login'>Login</a>
           <a v-if="!user" :class="{'is-active': activeRoute == '/signup'}" class="navbar-item" href='/signup'>Sign Up</a>
           <div style="align-items: center" v-if="user" class="navbar-item has-dropdown">

@@ -37,11 +37,9 @@ sub startup {
   $r->get('/')->to('example#welcome');
   $r->get('/global-vars')->to('example#global_vars');
 
-  $r->get('/login')->to('auth#login');
-  $r->post('/login')->to('auth#login');
 
-  $r->get('/signup')->to('auth#signup');
-  $r->post('/signup')->to('auth#signup');
+  $r->any(["GET", "POST"] => '/login')->to('auth#login');
+  $r->any(["GET", "POST"] => '/signup')->to('auth#signup');
 
   $r->get('/logout')->to('auth#logout');
 }
