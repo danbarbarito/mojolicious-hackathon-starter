@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
-public/
+public/*
+!public/.gitkeep
 mojolicious_hackathon_starter.conf
 .cache/
