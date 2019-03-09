@@ -12,7 +12,7 @@ This is the "Mojolicious Hackathon Starter" project. The goal of this project is
 - Mojolicious (Server)
 - Vue.js (Javascript Framework)
 - PostgreSQL (Database)
-- Webpack (Asset Bundler)
+- Parcel (Asset Bundler)
 - Bulma (CSS Framework)
 - Sass (CSS Preprocessor)
 - Buefy (Vue wrapper around Bulma)
@@ -26,17 +26,18 @@ Currently MHS provides:
 - Hot reloading
 - Server side rendering
 - User sign up and login
+- Hot Reloading
 
 
 ## Usage
 
 To use MHS:
 
-- Install Perl5, and CPANM
+- Install Perl5, CPANM, & Node.js
 - Clone the repository and navigate to the project folder
 - Run `cpanm --installdeps .`
 - Copy `mojolicious_hackathon_starter.conf.example` to `mojolicious_hackathon_starter.conf` and modify the file as needed
-- Run `mojo webpack script/mojolicious_hackathon_starter` to run in development mode, or `mojo webpack -m production -l https://*:443 -l http://[::]:3000 script/mojolicious_hackathon_starter` to run in production mode
+- Run `morbo script/mojolicious_hackathon_starter` to run the server, and `npm run dev` in another terminal to bundle your assets and get hot reloading
 
 
 ## Screenshots

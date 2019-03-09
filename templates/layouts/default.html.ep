@@ -6,8 +6,8 @@
     <%= title %>
   </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  %= asset "mojolicious-hackathon-starter.css"
+        crossorigin="anonymous">
+  <link href="/app.css" rel="stylesheet">
 </head>
 
 <body>
@@ -82,7 +82,8 @@
       </div>
     </footer>
   </div>
-  %= asset "mojolicious-hackathon-starter.js"
+  
+  <script src="/app.js"></script>
 </body>
 
 </html>

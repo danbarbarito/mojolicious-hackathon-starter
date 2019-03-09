@@ -8,8 +8,6 @@ use Data::Dumper;
 sub startup {
   my $self = shift;
 
-  $self->plugin(Webpack => {process => [qw(js css vue sass)]});
-
   # Load configuration from hash returned by config file
   my $config = $self->plugin('Config');
 
