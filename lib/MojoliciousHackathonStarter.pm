@@ -11,6 +11,9 @@ sub startup {
   # Load configuration from hash returned by config file
   my $config = $self->plugin('Config');
 
+  # Auto reload plugin
+  $self->plugin('AutoReload');
+
   # Configure the application
   $self->secrets($config->{secrets});
 
